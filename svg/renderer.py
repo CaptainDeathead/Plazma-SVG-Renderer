@@ -13,6 +13,4 @@ class SVGRenderer:
 
         pg.draw.rect(self.image, (255,255,255), (0, 0, self.width, self.height))
 
-        print(node.render().get_rect())
-
         self.image.blit(node.render(), (node.global_coords))
